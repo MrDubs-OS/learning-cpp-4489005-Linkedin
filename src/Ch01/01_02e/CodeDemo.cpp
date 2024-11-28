@@ -1,12 +1,18 @@
-// Learning C++ 
-// Exercise 01_02
-// Hello World, by Eduardo Corpeño 
+/* Computes the dimensional weight of a
 
-#include <iostream>
+box from input provided by the user */
 
-int main(){
-    std::cout << "Hi There!" << std::endl;
+#include <stdio.h>
 
-    std::cout << std::endl << std::endl;
-    return (0);
+int main(void)
+
+{
+    int height = 10, length = 10, width = 10, volume, weight;
+    
+    volume = height * length * width;
+
+    printf("Volume (cubic inches): %d\n", volume); 
+    printf("Dimensional weight (pounds):%d\n\n", (volume + 165)/166);
+    return 0;
+
 }
